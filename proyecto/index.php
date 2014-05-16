@@ -10,7 +10,7 @@
 	<meta http-equiv='pragma' content='no-cache' />
     <link rel='stylesheet' href='/css/index.css' />
 	<head>".$form -> contenido_head2()."</head>
-    <body>".$form->content_cabecera().'</body>
+    <body>".$form->content_cabecera('').'</body>
 
     <div class="jumbotron">
         <div class="container">

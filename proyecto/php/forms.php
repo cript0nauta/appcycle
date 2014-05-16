@@ -168,8 +168,8 @@
 		}
 		return $form;
 		}
-		public function content_cabecera(){
-		$form = "<div class='cabecera_new'></div><div class='cabecera_new'><img class='logocabecera' src='graficos/LogoSecundario.png' /></div>";
+		public function content_cabecera($tipo){
+		$form = "<div class='cabecera_new'></div><div class='cabecera_new'><img class='logocabecera' src='".$tipo."graficos/LogoSecundario.png' /></div>";
 		return $form;
 		}
 	}

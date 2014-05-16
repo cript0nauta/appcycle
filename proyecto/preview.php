@@ -1,6 +1,5 @@
 <?php
 	session_start();
-	if(isset($_SESSION['admin'])){
 	require_once('php/forms.php');
 	require_once('php/functions.php');
 	$form = new forms();
@@ -9,11 +8,7 @@
 	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 	<meta http-equiv='pragma' content='no-cache' />
 	<head>".$form -> contenido_head()."</head>
-	<body>".$form->content_cabecera().$form -> contendedor_idea_by_id($_GET['id'])."</body>
+	<body>".$form-> content_cabecera('../').$form -> contendedor_idea_by_id($_GET['id'])."</body>
 	</html>";
-	}
-	else{
-	$content ="<script>self.location.href='../';</script>";
-	}
 	echo $content;
 	?>
