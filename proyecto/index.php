@@ -8,7 +8,8 @@
 	<html xmlns='http://www.w3.org/1999/xhtml'>
 	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 	<meta http-equiv='pragma' content='no-cache' />
-    <link rel='stylesheet' href='/css/index.css' />
+    <link rel='stylesheet' href='css/index.css' />
+    <script src='js/index.js' type='text/javascript'></script>
 	<head>".$form -> contenido_head2()."</head>
     <body>".$form->content_cabecera('').'</body>
 
@@ -19,11 +20,9 @@
         </div>
     </div> 
 
-    <div class="categoria"><img src="http://www.antoniomateo.com.ar/proyectos/appcycle/graficos/LogoSecundario.png" alt="" class="categoria" /></div>
-    <div class="categoria"><img src="http://www.antoniomateo.com.ar/proyectos/appcycle/graficos/LogoSecundario.png" alt="" class="categoria" /></div>
-    <div class="categoria"><img src="http://www.antoniomateo.com.ar/proyectos/appcycle/graficos/LogoSecundario.png" alt="" class="categoria" /></div>
-    <div class="categoria"><img src="http://www.antoniomateo.com.ar/proyectos/appcycle/graficos/LogoSecundario.png" alt="" class="categoria" /></div>
-    <div class="categoria"><img src="http://www.antoniomateo.com.ar/proyectos/appcycle/graficos/LogoSecundario.png" alt="" class="categoria" /></div>
+<div class="container" id="categorias">
+</div>
+
 
 	</html>';
 	echo $content;
