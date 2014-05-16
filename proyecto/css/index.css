@@ -4,9 +4,11 @@ div.categoria
     position: relative;
 }
 
-img.categoria
+.categoria img
 {
     width: 250px;
     height: 250px;
+    //position: absolute;
+    //opacity: 0.4;
 }
 
