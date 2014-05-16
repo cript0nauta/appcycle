@@ -15,3 +15,4 @@ Options -Indexes
 	RewriteRule ^alta_productos/?$ wsservices/ws_productos.php?alta_productos=
 	RewriteRule ^baja_productos/?$ wsservices/ws_productos.php?baja_productos=
 	RewriteRule ^mod_productos/?$ wsservices/ws_productos.php?mod_productos=
+	RewriteRule ^get_categorias/?$ wsservices/ws_productos.php?get_categorias=
