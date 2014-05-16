@@ -23,6 +23,10 @@ if(isset($_GET['empty'])){
 		$col_idappcycle = $_POST['idappcycle'];$col_titulo = $_POST['titulo'];$col_descripcion = $_POST['descripcion'];$col_link = $_POST['link'];$col_video = $_POST['video'];$col_tags = $_POST['tags'];
 		$result = $productos -> mod_productos_registro($col_idappcycle,$col_titulo,$col_descripcion,$col_link,$col_video,$col_tags,$idusuario);
 		}
+		else if(isset($_GET['get_categorias'])){
+		$productos = new productos();
+		$result = $productos -> get_categorias();
+		}
 header("Content-Type: application/json", true);
 echo json_encode($result);
 ?>

@@ -69,4 +69,9 @@ public function form_grid_productos($pagina,$filtro){
 	$content = $function -> exec_sp_to_json('appcycle_update_productos',$params);
 	return $content;
 	}
-}	?>
+	public function get_categorias(){
+	$function = new functions();
+	$content = $function -> exec_sp_to_json('appcycle_get_categorias',null);
+	return $content;
+	}
+	}	?>
