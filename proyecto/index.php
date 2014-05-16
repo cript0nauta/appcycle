@@ -20,6 +20,21 @@
         </div>
     </div> 
 
+<div id="modalcategoria" role="dialog" class="modal fade" tabindex="-1" area-hidden="true">
+    <div class="model-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Prueba de modal</h4>
+            </div>
+            <div class="modal-body">
+                <p></p>
+            </div>
+            <div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" type="button">Cerrar</button></div>
+        </div>
+    </div>
+</div>
+
+
 <div class="container" id="categorias">
 </div>
 
