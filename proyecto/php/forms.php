@@ -36,6 +36,38 @@
 			<script type='text/javascript' src='js/class_msg.js'></script>";
 		return $form;
 		}
+		public function contenido_head2(){
+		require_once('functions.php');
+		$functions = new functions();
+		
+		$css = $functions -> lista_archivos(getcwd().'/css');
+		$css_ = "";
+		$js = $functions -> lista_archivos(getcwd().'/js');
+		$js_ = "";
+		
+		for($i = 0; $i < count($css); $i++){
+			$css_ .= "
+			<link rel='stylesheet' type='text/css' href='css/".$css[$i]."' media='screen' />";
+		}
+		for($a = 0; $a < count($js); $a++){
+			if( $js[$a] != 'jquery.min.js' & $js[$a] != 'jquery.ui.js' & $js[$a] != 'class_msg.js' & $js[$a] != 'general.js'){
+			$js_ .= "
+			<script type='text/javascript' src='js/".$js[$a]."'></script>"; }
+		}
+			$form ="
+			<title>.:appcycle:. | Desarrollado por www.antoniomateo.com.ar</title>
+			<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+			<meta name='keywords' content='appcycle' />
+			<meta name='description' content='appcycle' />
+			<link rel='stylesheet' type='text/css' href='css/bt/bootstrap.min.css' media='screen' />
+			<link rel='stylesheet' type='text/css' href='css/bt/bootstrap-theme.min.css' media='screen' />".$css_."
+			<script type='text/javascript' src='js/jquery.min.js'></script>
+			<script type='text/javascript' src='js/jquery.ui.js'></script>
+			<script type='text/javascript' src='js/bootstrap.min.js'></script>			
+			<script type='text/javascript' src='js/class_msg.js'></script>
+			<script type='text/javascript' src='js/general.js'></script>".$js_;
+		return $form;
+		}
 		public function contenido_head(){
 		require_once('functions.php');
 		$functions = new functions();
@@ -137,7 +169,7 @@
 		return $form;
 		}
 		public function content_cabecera(){
-		$form = "<div class='cabecera_new'></div><div class='cabecera_new'><img class='logocabecera' src='../graficos/LogoSecundario.png' /></div>";
+		$form = "<div class='cabecera_new'></div><div class='cabecera_new'><img class='logocabecera' src='graficos/LogoSecundario.png' /></div>";
 		return $form;
 		}
 	}

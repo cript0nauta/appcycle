@@ -8,9 +8,8 @@
 	<html xmlns='http://www.w3.org/1999/xhtml'>
 	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
 	<meta http-equiv='pragma' content='no-cache' />
-	<head>".$form -> contenido_head()."</head>
+	<head>".$form -> contenido_head2()."</head>
 	<body>".$form->content_cabecera()."</body>
 	</html>";
-	}
 	echo $content;
 	?>
