@@ -1,0 +1,17 @@
+Options -Indexes
+	RewriteEngine on
+
+	RewriteRule ^login/?$ php/class_usuario.php?login=
+	RewriteRule ^salida/?$ php/exec_logout.php
+	RewriteRule ^principal/?$ principal.php
+	RewriteRule ^preview/(\w+)?$ preview.php?id=$1
+	RewriteRule ^form/(\w+)?$ php/webservices.php?id=$1
+	RewriteRule ^form/(\w+)/(\w+)?$ php/webservices.php?id=$1&id2=$2
+	RewriteRule ^form/(\w+)/p/(\w+)?$ php/webservices.php?id=$1&pag=$2
+	RewriteRule ^form/(\w+)/f/(\w+)?$ php/webservices.php?id=$1&fil=$2
+	RewriteRule ^form/(\w+)/f/(\w+)/p/(\w+)?$ php/webservices.php?id=$1&fil=$2&pag=$3
+	RewriteRule ^form/(\w+)/o/(\w+)/(\w+)?$ php/webservices.php?id=$1&id2=$2&id3=$3
+	RewriteRule ^exportar/(\w+)?$ php/class_exportar.php?id=$1
+	RewriteRule ^alta_productos/?$ wsservices/ws_productos.php?alta_productos=
+	RewriteRule ^baja_productos/?$ wsservices/ws_productos.php?baja_productos=
+	RewriteRule ^mod_productos/?$ wsservices/ws_productos.php?mod_productos=
