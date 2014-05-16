@@ -1,0 +1,12 @@
+div.categoria
+{
+    float: left;
+    position: relative;
+}
+
+img.categoria
+{
+    width: 250px;
+    height: 250px;
+}
+
